@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='quote'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <path d='M22 24 C17 24 14 28 14 33 V44 H28 V31 H20 C20 27 22 25 26 24 Z' fill='#0B0B0F' opacity='.95'/>
+  <path d='M44 24 C39 24 36 28 36 33 V44 H50 V31 H42 C42 27 44 25 48 24 Z' fill='#0B0B0F' opacity='.95'/>
+
+</svg>

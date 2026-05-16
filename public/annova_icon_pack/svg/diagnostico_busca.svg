@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='diagnostico busca'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <circle cx='27' cy='27' r='13' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M37 37 L51 51' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M21 27 C21 23.5 23.5 21 27 21' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+
+</svg>

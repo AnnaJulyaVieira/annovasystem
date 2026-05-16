@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='evolucao grafico'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <path d='M12 50 H52' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M14 45 L25 34 L34 39 L50 20' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M43 20 H50 V27' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <circle cx='25' cy='34' r='2.5' fill='#0B0B0F'/>
+  <circle cx='34' cy='39' r='2.5' fill='#0B0B0F'/>
+
+</svg>

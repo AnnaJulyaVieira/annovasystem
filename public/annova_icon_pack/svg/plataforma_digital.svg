@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='plataforma digital'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <path d='M12 45 L32 55 L52 45 L32 35 Z' stroke='#B8BDC5' stroke-width='1.5' fill='#F8F9FA'/>
+  <rect x='20' y='16' width='24' height='28' rx='2' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M20 24 H44' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+  <path d='M25 31 H39 M25 37 H35' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+  <circle cx='25' cy='20' r='1.2' fill='#0B0B0F'/>
+  <circle cx='30' cy='20' r='1.2' fill='#0B0B0F'/>
+
+</svg>

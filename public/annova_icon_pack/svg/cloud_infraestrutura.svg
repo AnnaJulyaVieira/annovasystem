@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='cloud infraestrutura'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <path d='M12 48 L32 58 L52 48 L32 38 Z' stroke='#B8BDC5' stroke-width='1.5' fill='#F8F9FA'/>
+  <path d='M21 38 H44 C49 38 52 35 52 31 C52 27 49 24 45 24 C43 18 38 15 32 16 C27 17 23 21 23 26 C18 26 14 29 14 34 C14 37 17 38 21 38Z' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M24 45 L32 49 L40 45' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+
+</svg>

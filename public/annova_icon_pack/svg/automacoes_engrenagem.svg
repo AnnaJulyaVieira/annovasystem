@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='automacoes engrenagem'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <path d='M12 47 L32 57 L52 47 L32 37 Z' stroke='#B8BDC5' stroke-width='1.5' fill='#F8F9FA'/>
+  <circle cx='32' cy='30' r='9' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <circle cx='32' cy='30' r='3' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M32 13 V19 M32 41 V47 M15 30 H21 M43 30 H49 M20 18 L24 22 M40 38 L44 42 M44 18 L40 22 M24 38 L20 42' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M27 14 H37 L39 20 L45 23 L51 21 L56 30 L51 39 L45 37 L39 40 L37 46 H27 L25 40 L19 37 L13 39 L8 30 L13 21 L19 23 L25 20 Z' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+
+</svg>

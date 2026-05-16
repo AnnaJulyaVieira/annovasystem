@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 64 64' role='img' aria-label='analytics dados'>
+  <rect width='64' height='64' fill='none'/>
+  
+  <rect x='11' y='12' width='42' height='40' rx='5' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M18 43 L27 34 L34 38 L46 23' stroke='#0B0B0F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <path d='M18 22 H27 M18 29 H24' stroke='#666A73' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' fill='none' opacity='.75'/>
+  <circle cx='27' cy='34' r='2' fill='#0B0B0F'/>
+  <circle cx='34' cy='38' r='2' fill='#0B0B0F'/>
+
+</svg>
