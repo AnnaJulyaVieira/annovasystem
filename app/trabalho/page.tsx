@@ -92,7 +92,7 @@ export default function TrabalhoPage() {
                     </p>
                   </div>
 
-                  <div className="mt-10 flex items-center justify-between">
+                  <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <ul className="flex flex-wrap gap-2">
                       {c.scope.slice(0, 3).map((s) => (
                         <li
@@ -103,7 +103,7 @@ export default function TrabalhoPage() {
                         </li>
                       ))}
                     </ul>
-                    <span className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ink transition-transform group-hover:translate-x-0.5">
+                    <span className="inline-flex shrink-0 items-center gap-1.5 self-end whitespace-nowrap text-[13px] font-medium text-ink transition-transform group-hover:translate-x-0.5 sm:self-auto">
                       Ver caso →
                     </span>
                   </div>
