@@ -83,12 +83,12 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-marquee {
-  animation: marquee 38s linear infinite;
+  animation: marquee 55s linear infinite;
 }
 
 @keyframes blink {
@@ -104,4 +104,81 @@ body {
 
 .animate-blink {
   animation: blink 1.1s steps(1, end) infinite;
+}
+
+/* ---- Hero entrance animation ---- */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-1 {
+  animation-delay: 0.08s;
+}
+.reveal-2 {
+  animation-delay: 0.22s;
+}
+.reveal-3 {
+  animation-delay: 0.38s;
+}
+.reveal-4 {
+  animation-delay: 0.54s;
+}
+.reveal-5 {
+  animation-delay: 0.7s;
+}
+
+.bg-glow {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.1),
+    transparent 68%
+  );
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+.animate-float {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-soft 9s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-soft 7.5s ease-in-out infinite;
+  animation-delay: -2.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    animation: none;
+  }
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-delay {
+    animation: none;
+  }
 }

@@ -1,8 +1,10 @@
+import { BarChart3, CloudCog, Code2, Workflow, type LucideIcon } from "lucide-react";
+
 type Capability = {
   num: string;
   title: string;
   description: string;
-  Icon: (props: { className?: string }) => React.ReactElement;
+  Icon: LucideIcon;
   span?: string;
   invert?: boolean;
 };
@@ -13,7 +15,7 @@ const capabilities: Capability[] = [
     title: "Produtos digitais sob medida",
     description:
       "Web apps, plataformas internas e SaaS desenhados em torno do problema real — não em torno de templates.",
-    Icon: IconCode,
+    Icon: Code2,
     span: "sm:col-span-2",
     invert: true,
   },
@@ -22,21 +24,21 @@ const capabilities: Capability[] = [
     title: "Integrações & automações",
     description:
       "APIs, ETLs e workflows que conectam sistemas legados, ERPs e ferramentas SaaS sem ruído.",
-    Icon: IconNodes,
+    Icon: Workflow,
   },
   {
     num: "03",
     title: "Dados & dashboards",
     description:
       "Pipelines, modelagem e painéis que transformam dado bruto em decisão diária.",
-    Icon: IconBars,
+    Icon: BarChart3,
   },
   {
     num: "04",
     title: "Cloud & infraestrutura",
     description:
       "Arquitetura, observabilidade e CI/CD para crescer com previsibilidade de custo.",
-    Icon: IconCloud,
+    Icon: CloudCog,
     span: "sm:col-span-2",
   },
 ];
@@ -92,7 +94,9 @@ export default function Approach() {
                   {c.num}
                 </span>
                 <c.Icon
-                  className="h-7 w-7 transition-transform group-hover:-translate-y-0.5"
+                  strokeWidth={1.5}
+                  className="h-6 w-6 transition-transform group-hover:-translate-y-0.5"
+                  aria-hidden="true"
                 />
               </div>
 
@@ -114,83 +118,5 @@ export default function Approach() {
         </div>
       </div>
     </section>
-  );
-}
-
-function IconCode({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M11 9 L3 16 L11 23" />
-      <path d="M21 9 L29 16 L21 23" />
-      <path d="M18 6 L14 26" />
-    </svg>
-  );
-}
-
-function IconNodes({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <circle cx="6" cy="8" r="2.5" />
-      <circle cx="26" cy="8" r="2.5" />
-      <circle cx="16" cy="24" r="2.5" />
-      <path d="M8 9.5 L14 22.5" />
-      <path d="M24 9.5 L18 22.5" />
-      <path d="M8.5 8 L23.5 8" strokeDasharray="2 3" />
-    </svg>
-  );
-}
-
-function IconBars({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M5 27 L27 27" />
-      <path d="M9 22 L9 27" />
-      <path d="M16 14 L16 27" />
-      <path d="M23 6 L23 27" />
-    </svg>
-  );
-}
-
-function IconCloud({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M9 22 C5 22 4 18 6 16 C5 12 9 10 12 12 C13 9 18 9 19 13 C23 12 26 15 25 19 C27 19 28 21 27 22 L9 22 Z" />
-    </svg>
   );
 }

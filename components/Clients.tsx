@@ -8,7 +8,7 @@ const clients = [
 ];
 
 export default function Clients() {
-  const row = [...clients, ...clients];
+  const loop = [...clients, ...clients];
   return (
     <section
       aria-labelledby="clients-heading"
@@ -27,17 +27,25 @@ export default function Clients() {
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-linear-to-r from-white to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-linear-to-l from-white to-transparent" />
 
-        <ul className="flex w-max animate-marquee items-center gap-14 pb-12 pr-14">
-          {row.map((c, i) => (
-            <li
-              key={`${c.name}-${i}`}
-              className="flex h-10 shrink-0 items-center text-ink-soft grayscale transition-colors hover:text-ink"
-              aria-label={c.name}
+        <div className="flex w-max pb-12">
+          {[0, 1].map((copy) => (
+            <ul
+              key={copy}
+              aria-hidden={copy === 1}
+              className="flex shrink-0 animate-marquee items-center gap-14 pr-14"
             >
-              {c.render()}
-            </li>
+              {loop.map((c, i) => (
+                <li
+                  key={`${c.name}-${i}`}
+                  className="flex h-10 shrink-0 items-center text-ink-soft grayscale transition-colors hover:text-ink"
+                  aria-label={c.name}
+                >
+                  {c.render()}
+                </li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

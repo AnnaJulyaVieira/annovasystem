@@ -1,70 +1,65 @@
+import { ArrowRight, ChevronDown } from "lucide-react";
+
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-bg-dark text-on-dark">
-      <div className="bg-grid-dark pointer-events-none absolute inset-0 opacity-60 mask-fade" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/30 to-transparent" />
+    <section className="relative overflow-hidden bg-[#050505] px-6 py-16 text-white lg:px-16 lg:py-24">
+      {/* Fundo */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.12),transparent_25%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_30%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.35)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.35)_1px,transparent_1px)] bg-[size:64px_64px] opacity-[0.08]" />
 
-      <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 pt-28 pb-24 text-center lg:pt-36 lg:pb-32">
-        <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
-          <span className="h-px w-8 bg-on-dark-soft/60" />
-          <span>// estúdio de engenharia digital</span>
-          <span className="inline-block h-2 w-2 bg-on-dark animate-blink" />
-        </div>
+      {/* Hero */}
+      <div className="relative z-20 mx-auto max-w-[1400px] px-8 pt-20 lg:pt-[92px]">
+        {/* Texto */}
+        <div>
+          <div className="mb-6 text-xs uppercase tracking-[0.45em] text-white/45">
+            // Agência de tecnologia
+          </div>
 
-        <h1 className="mt-8 max-w-4xl text-balance text-[44px] font-bold leading-[0.98] tracking-[-0.02em] text-on-dark sm:text-[64px] lg:text-[88px]">
-          Software que parece simples —{" "}
-          <span className="italic font-light text-on-dark-soft">
-            e move o negócio.
-          </span>
-        </h1>
+          <h1 className="max-w-3xl text-5xl font-bold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
+            Tecnologia que <br />
+            impulsiona negócios.
+          </h1>
 
-        <p className="mt-8 max-w-xl text-balance text-[15px] leading-relaxed text-on-dark-soft md:text-[17px]">
-          Somos um estúdio de produto e engenharia. Projetamos sistemas,
-          integrações e automações que tiram fricção da operação e deixam o
-          time livre para crescer.
-        </p>
+          <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/60">
+            Criamos sites, sistemas, apps e automações inteligentes que
+            transformam ideias em produtos digitais de alto impacto.
+          </p>
 
-        <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
-          <a
-            href="/contato"
-            className="group inline-flex items-center gap-2 rounded-full bg-on-dark px-7 py-3.5 text-[14px] font-medium text-ink transition-transform hover:-translate-y-px"
-          >
-            Iniciar um projeto
-            <span className="transition-transform group-hover:translate-x-0.5">
-              →
-            </span>
-          </a>
-          <a
-            href="#capacidades"
-            className="group inline-flex items-center gap-2 rounded-full border border-line-dark px-7 py-3.5 text-[14px] font-medium text-on-dark transition-colors hover:border-on-dark"
-          >
-            Ver capacidades
-            <span className="text-on-dark-soft transition-colors group-hover:text-on-dark">
-              ↓
-            </span>
-          </a>
-        </div>
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="/contato"
+              className="flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-black transition hover:bg-white/90"
+            >
+              Falar com especialista <ArrowRight size={16} />
+            </a>
 
-        <div className="mt-20 grid w-full max-w-3xl grid-cols-2 gap-y-6 border-t border-line-dark pt-10 sm:grid-cols-4 lg:mt-24">
-          {stats.map((s) => (
-            <div key={s.label} className="flex flex-col items-center">
-              <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-on-dark-soft">
-                {s.label}
-              </span>
-              <span className="mt-2 text-[28px] font-semibold leading-none tracking-tight text-on-dark sm:text-[32px]">
-                {s.value}
-              </span>
+            <a
+              href="#capacidades"
+              className="flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-7 py-4 text-sm font-semibold transition hover:bg-white/[0.08]"
+            >
+              Ver nossos serviços <ChevronDown size={16} />
+            </a>
+          </div>
+
+          {/* Tecnologias */}
+          <div className="mt-12">
+            <div className="mb-5 text-xs uppercase tracking-[0.35em] text-white/35">
+              Tecnologias que utilizamos
             </div>
-          ))}
+
+            <div className="flex flex-wrap items-center gap-8 text-white/55">
+              <span className="text-xl">
+                NEXT<span className="text-xs">.js</span>
+              </span>
+              <span className="text-xl font-bold">node</span>
+              <span className="text-sm">docker</span>
+              <span className="text-lg">aws</span>
+              <span className="text-lg">n8n</span>
+              <span className="text-lg">tailwindcss</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
-const stats = [
-  { label: "Projetos entregues", value: "60+" },
-  { label: "Anos de operação", value: "07" },
-  { label: "Squads ativos", value: "12" },
-  { label: "NPS médio", value: "92" },
-];
