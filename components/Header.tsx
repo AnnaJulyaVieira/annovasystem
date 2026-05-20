@@ -171,7 +171,7 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-line text-ink transition-colors hover:bg-chip md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-full text-ink transition-colors hover:bg-chip md:hidden"
           >
             {open ? <IconClose /> : <IconBurger />}
           </button>

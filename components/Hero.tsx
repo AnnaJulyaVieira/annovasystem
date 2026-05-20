@@ -2,25 +2,25 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] px-6 py-16 text-white lg:px-16 lg:py-24">
+    <section className="relative overflow-hidden bg-[#050505] px-6 py-12 text-white sm:py-16 lg:px-16 lg:py-24">
       {/* Fundo */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.12),transparent_25%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_30%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.35)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.35)_1px,transparent_1px)] bg-[size:64px_64px] opacity-[0.08]" />
 
       {/* Hero */}
-      <div className="relative z-20 mx-auto max-w-[1400px] px-8 pt-20 lg:pt-[92px]">
+      <div className="relative z-20 mx-auto max-w-[1400px] pt-8 sm:px-8 sm:pt-20 lg:pt-[92px]">
         {/* Texto */}
         <div>
           <div className="mb-6 text-xs uppercase tracking-[0.45em] text-white/45">
             // Agência de tecnologia
           </div>
 
-          <h1 className="max-w-3xl text-5xl font-bold leading-[0.95] tracking-[-0.05em] md:text-6xl lg:text-7xl">
-            Tecnologia que <br />
+          <h1 className="max-w-3xl text-balance text-[40px] font-bold leading-none tracking-[-0.04em] sm:text-5xl sm:leading-[0.95] sm:tracking-[-0.05em] md:text-6xl lg:text-7xl">
+            Tecnologia que <br className="hidden sm:block" />
             impulsiona negócios.
           </h1>
 
-          <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/60">
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/60 sm:mt-7 sm:text-lg">
             Criamos sites, sistemas, apps e automações inteligentes que
             transformam ideias em produtos digitais de alto impacto.
           </p>

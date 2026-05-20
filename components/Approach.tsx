@@ -50,7 +50,7 @@ export default function Approach() {
       aria-labelledby="capacidades-heading"
       className="relative w-full overflow-hidden bg-white"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
@@ -72,12 +72,12 @@ export default function Approach() {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-3 sm:mt-14 sm:grid-cols-3">
           {capabilities.map((c) => (
             <article
               key={c.num}
               className={[
-                "group relative flex flex-col justify-between overflow-hidden rounded-2xl p-7 ring-1 transition-colors",
+                "group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 ring-1 transition-colors sm:p-7",
                 c.span ?? "",
                 c.invert
                   ? "bg-bg-dark text-on-dark ring-line-dark hover:bg-bg-darker"
@@ -100,13 +100,13 @@ export default function Approach() {
                 />
               </div>
 
-              <div className="mt-16">
-                <h3 className="text-[18px] font-semibold tracking-tight">
+              <div className="mt-10 sm:mt-16">
+                <h3 className="text-[17px] font-semibold tracking-tight sm:text-[18px]">
                   {c.title}
                 </h3>
                 <p
                   className={[
-                    "mt-2 max-w-md text-[13.5px] leading-relaxed",
+                    "mt-2 max-w-md text-[13px] leading-relaxed sm:text-[13.5px]",
                     c.invert ? "text-on-dark-soft" : "text-ink-soft",
                   ].join(" ")}
                 >

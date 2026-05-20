@@ -36,7 +36,7 @@ export default function Process() {
       aria-labelledby="processo-heading"
       className="relative w-full bg-white"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32">
         <div className="max-w-2xl">
           <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
             <span className="h-px w-8 bg-ink-soft/60" />
@@ -47,19 +47,19 @@ export default function Process() {
             className="mt-4 text-balance text-[34px] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-[44px] lg:text-[52px]"
           >
             Quatro passos.
-            <br />
+            <br className="hidden sm:block" />{" "}
             <span className="text-ink-soft">Sem teatro.</span>
           </h2>
         </div>
 
-        <ol className="mt-16 grid grid-cols-1 divide-y divide-line border-y border-line">
+        <ol className="mt-10 grid grid-cols-1 divide-y divide-line border-y border-line sm:mt-16">
           {steps.map((s) => (
             <li
               key={s.number}
-              className="grid grid-cols-12 items-baseline gap-6 py-8"
+              className="grid grid-cols-12 items-baseline gap-x-6 gap-y-2 py-6 sm:py-8"
             >
               <div className="col-span-12 sm:col-span-2">
-                <span className="font-mono text-[40px] font-bold leading-none tracking-tight text-ink sm:text-[56px]">
+                <span className="font-mono text-[34px] font-bold leading-none tracking-tight text-ink sm:text-[56px]">
                   {s.number}
                 </span>
               </div>

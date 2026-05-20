@@ -18,8 +18,8 @@ export default function Deliverables() {
     >
       <div className="bg-grid-dark pointer-events-none absolute inset-0 opacity-40 mask-fade" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-32">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+      <div className="relative mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32">
+        <div className="grid grid-cols-1 gap-10 sm:gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
           <div className="flex flex-col">
             <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
               <span className="h-px w-8 bg-on-dark-soft/60" />
@@ -30,7 +30,7 @@ export default function Deliverables() {
               className="mt-4 text-balance text-[34px] font-bold leading-[1.05] tracking-[-0.02em] sm:text-[44px] lg:text-[52px]"
             >
               O que sai
-              <br />
+              <br className="hidden sm:block" />{" "}
               do estúdio.
             </h2>
             <p className="mt-6 max-w-md text-[14.5px] leading-relaxed text-on-dark-soft">
