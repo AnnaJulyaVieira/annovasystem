@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Annova System — Estúdio de engenharia digital",
+  title: "AG2 Tech — Estúdio de engenharia digital",
   description:
     "Estúdio de produto e engenharia. Projetamos sistemas, integrações e automações que tiram fricção da operação e deixam o time livre para crescer.",
 };

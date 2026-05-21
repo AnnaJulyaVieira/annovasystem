@@ -4,7 +4,7 @@ import { cases } from "@/lib/cases";
 import BackLink from "@/components/BackLink";
 
 export const metadata: Metadata = {
-  title: "Trabalho — Annova System",
+  title: "Trabalho — AG2 Tech",
   description:
     "Seleção de projetos entregues pelo estúdio: fintech, logística, saúde, agro, educação e RH.",
 };

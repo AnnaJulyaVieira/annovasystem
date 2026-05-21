@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BackLink from "@/components/BackLink";
 
 export const metadata: Metadata = {
-  title: "Contato — Annova System",
+  title: "Contato — AG2 Tech",
   description:
     "Conte o problema em poucas linhas. Em até 48h você recebe um retorno com um caminho possível.",
 };
@@ -56,10 +56,10 @@ export default function ContatoPage() {
                   email
                 </span>
                 <a
-                  href="mailto:hello@annova.system"
+                  href="mailto:hello@ag2tech.com.br"
                   className="text-[15px] text-ink underline underline-offset-4"
                 >
-                  hello@annova.system
+                  hello@ag2tech.com.br
                 </a>
               </li>
               <li className="flex items-baseline gap-4">
@@ -67,10 +67,10 @@ export default function ContatoPage() {
                   imprensa
                 </span>
                 <a
-                  href="mailto:imprensa@annova.system"
+                  href="mailto:imprensa@ag2tech.com.br"
                   className="text-[15px] text-ink underline underline-offset-4"
                 >
-                  imprensa@annova.system
+                  imprensa@ag2tech.com.br
                 </a>
               </li>
               <li className="flex items-baseline gap-4">
@@ -78,10 +78,10 @@ export default function ContatoPage() {
                   gente
                 </span>
                 <a
-                  href="mailto:gente@annova.system"
+                  href="mailto:gente@ag2tech.com.br"
                   className="text-[15px] text-ink underline underline-offset-4"
                 >
-                  gente@annova.system
+                  gente@ag2tech.com.br
                 </a>
               </li>
               <li className="flex items-baseline gap-4">
@@ -96,7 +96,7 @@ export default function ContatoPage() {
           </div>
 
           <form
-            action="mailto:hello@annova.system"
+            action="mailto:hello@ag2tech.com.br"
             method="post"
             encType="text/plain"
             className="flex flex-col gap-6 rounded-2xl border border-line bg-white p-7 sm:p-10"
@@ -109,7 +109,7 @@ export default function ContatoPage() {
                 type="email"
                 placeholder="voce@empresa.com"
               />
-              <Field label="Empresa" name="empresa" placeholder="Annova S/A" />
+              <Field label="Empresa" name="empresa" placeholder="AG2 S/A" />
               <Field
                 label="Cargo"
                 name="cargo"

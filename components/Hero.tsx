@@ -1,4 +1,21 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
+import {
+  SiNextdotjs,
+  SiNodedotjs,
+  SiDocker,
+  SiN8N,
+  SiTailwindcss,
+} from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
+
+const technologies = [
+  { name: "Next.js", Icon: SiNextdotjs },
+  { name: "Node.js", Icon: SiNodedotjs },
+  { name: "Docker", Icon: SiDocker },
+  { name: "AWS", Icon: FaAws },
+  { name: "n8n", Icon: SiN8N },
+  { name: "Tailwind CSS", Icon: SiTailwindcss },
+];
 
 export default function Hero() {
   return (
@@ -47,15 +64,19 @@ export default function Hero() {
               Tecnologias que utilizamos
             </div>
 
-            <div className="flex flex-wrap items-center gap-8 text-white/55">
-              <span className="text-xl">
-                NEXT<span className="text-xs">.js</span>
-              </span>
-              <span className="text-xl font-bold">node</span>
-              <span className="text-sm">docker</span>
-              <span className="text-lg">aws</span>
-              <span className="text-lg">n8n</span>
-              <span className="text-lg">tailwindcss</span>
+            <div className="flex flex-wrap items-center gap-3">
+              {technologies.map(({ name, Icon }) => (
+                <div
+                  key={name}
+                  className="group flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5 text-white/55 transition-all duration-300 hover:border-white/25 hover:bg-white/[0.07] hover:text-white"
+                >
+                  <Icon
+                    size={18}
+                    className="shrink-0 transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <span className="text-sm font-medium">{name}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ const footerCols = [
   {
     title: "Contato",
     links: [
-      { label: "hello@annova.system", href: "mailto:hello@annova.system" },
+      { label: "hello@ag2tech.com.br", href: "mailto:hello@ag2tech.com.br" },
       { label: "Belo Horizonte · Brasil", href: "#" },
       { label: "LinkedIn", href: "#" },
       { label: "GitHub", href: "#" },
@@ -37,13 +37,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-10 pt-16">
         <div className="grid grid-cols-2 gap-10 border-b border-line-dark pb-12 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" aria-label="Annova System" className="inline-block">
+            <Link href="/" aria-label="AG2 Tech" className="inline-block">
               <Image
-                src="/logo.png"
-                alt="Annova System"
-                width={520}
-                height={120}
-                className="h-7 w-auto invert"
+                src="/logo-trimmed.png"
+                alt="AG2 Tech"
+                width={1331}
+                height={201}
+                className="h-8 w-auto invert"
               />
             </Link>
             <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-on-dark-soft">
@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-3 pt-8 sm:flex-row sm:items-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
-            © 2026 annova.system · todos os direitos reservados
+            © 2026 AG2 Tech · todos os direitos reservados
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
             v 4.0 · feito em belo horizonte

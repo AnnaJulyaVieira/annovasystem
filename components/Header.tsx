@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cases } from "@/lib/cases";
+import SearchModal from "./SearchModal";
 
 type DropdownItem = { label: string; href: string; desc?: string };
 type NavItem = {
@@ -58,6 +59,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [hovered, setHovered] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     if (typeof document === "undefined") return;
@@ -66,6 +68,18 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  // Open search with Cmd/Ctrl + K from anywhere on the page.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   return (
     <header
@@ -76,17 +90,17 @@ export default function Header() {
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-6">
         <Link
           href="/"
-          aria-label="Annova System"
+          aria-label="AG2 Tech"
           className="flex shrink-0 items-center"
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/logo.png"
-            alt="Annova System"
-            width={520}
-            height={120}
+            src="/logo-trimmed.png"
+            alt="AG2 Tech"
+            width={1331}
+            height={201}
             priority
-            className="h-15 w-auto"
+            className="h-9 w-auto"
           />
         </Link>
 
@@ -141,18 +155,10 @@ export default function Header() {
           <button
             type="button"
             aria-label="Buscar"
+            onClick={() => setSearchOpen(true)}
             className="hidden h-9 w-9 items-center justify-center rounded-full text-ink-soft transition-colors hover:bg-chip hover:text-ink md:inline-flex"
           >
             <SearchIcon />
-          </button>
-
-          <button
-            type="button"
-            className="hidden h-9 items-center gap-1 rounded-full px-3 text-[12.5px] font-medium text-ink-soft transition-colors hover:bg-chip hover:text-ink md:inline-flex"
-            aria-label="Selecionar idioma"
-          >
-            BR
-            <Chevron className="h-2.5 w-2.5" />
           </button>
 
           <span className="hidden h-5 w-px bg-line md:block" />
@@ -301,23 +307,17 @@ export default function Header() {
             })}
           </ul>
 
-          <div className="mt-6 flex items-center justify-between">
-            <button
-              type="button"
-              className="inline-flex items-center gap-1 text-[12.5px] font-medium text-ink-soft"
-              aria-label="Selecionar idioma"
-            >
-              BR
-              <Chevron className="h-2.5 w-2.5" />
-            </button>
-            <button
-              type="button"
-              aria-label="Buscar"
-              className="grid h-9 w-9 place-items-center rounded-full border border-line text-ink-soft"
-            >
-              <SearchIcon />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false);
+              setSearchOpen(true);
+            }}
+            className="mt-6 flex w-full items-center gap-2.5 rounded-full border border-line px-4 py-3 text-[14px] font-medium text-ink-soft"
+          >
+            <SearchIcon />
+            Buscar no site
+          </button>
 
           <div className="mt-4 flex flex-col gap-3">
             <Link
@@ -329,11 +329,11 @@ export default function Header() {
               <span aria-hidden="true">→</span>
             </Link>
             <a
-              href="mailto:hello@annova.system"
+              href="mailto:hello@ag2tech.com.br"
               onClick={() => setOpen(false)}
               className="inline-flex items-center justify-between rounded-full border border-line px-5 py-3.5 text-[14px] font-medium text-ink"
             >
-              hello@annova.system
+              hello@ag2tech.com.br
               <span className="text-ink-soft" aria-hidden="true">
                 →
               </span>
@@ -345,6 +345,8 @@ export default function Header() {
           </p>
         </nav>
       </div>
+
+      <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 }

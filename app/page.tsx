@@ -37,16 +37,16 @@ function CTA() {
           </h2>
           <p className="mt-6 max-w-md text-[15px] leading-relaxed text-on-dark-soft">
             Conta pra gente em poucas linhas. Em até 48h você recebe um retorno
-            com um caminho possível — mesmo que não seja com a Annova.
+            com um caminho possível — mesmo que não seja com a AG2 Tech.
           </p>
         </div>
 
         <div className="flex w-full flex-col gap-3 sm:max-w-sm">
           <a
-            href="mailto:hello@annova.system"
+            href="mailto:hello@ag2tech.com.br"
             className="group inline-flex items-center justify-between rounded-full bg-on-dark px-6 py-4 text-[14px] font-medium text-ink transition-transform hover:-translate-y-px"
           >
-            hello@annova.system
+            hello@ag2tech.com.br
             <span className="transition-transform group-hover:translate-x-0.5">
               →
             </span>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import BackLink from "@/components/BackLink";
 
 export const metadata: Metadata = {
-  title: "Sobre — Annova System",
+  title: "Sobre — AG2 Tech",
   description:
     "Estúdio de engenharia digital fundado em 2019. Times pequenos, processo objetivo, software que dura.",
 };
@@ -43,7 +43,7 @@ const team = [
 ];
 
 const timeline = [
-  { year: "2019", event: "Annova é fundada em Belo Horizonte com 3 pessoas." },
+  { year: "2019", event: "AG2 Tech é fundada em Belo Horizonte com 3 pessoas." },
   { year: "2021", event: "Primeiro contrato de squad dedicado com fintech." },
   { year: "2022", event: "Equipe cresce para 14 e abrimos a área de dados." },
   { year: "2024", event: "Lançamos o framework interno de discovery rápido." },
@@ -70,7 +70,7 @@ export default function SobrePage() {
             </span>
           </h1>
           <p className="mt-8 max-w-2xl text-[16px] leading-relaxed text-on-dark-soft">
-            A Annova é um estúdio de engenharia digital fundado em 2019.
+            A AG2 Tech é um estúdio de engenharia digital fundado em 2019.
             Construímos software pra empresas que precisam de tecnologia bem
             feita, mas não querem (ou não precisam) montar uma fábrica interna.
           </p>
@@ -210,10 +210,10 @@ export default function SobrePage() {
             <p className="mt-2 text-[14.5px] text-ink-soft">
               Imprensa, parcerias institucionais e palestras:{" "}
               <a
-                href="mailto:imprensa@annova.system"
+                href="mailto:imprensa@ag2tech.com.br"
                 className="text-ink underline underline-offset-4"
               >
-                imprensa@annova.system
+                imprensa@ag2tech.com.br
               </a>
             </p>
           </div>

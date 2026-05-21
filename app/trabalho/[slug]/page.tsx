@@ -17,9 +17,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const item = getCase(slug);
-  if (!item) return { title: "Caso não encontrado — Annova System" };
+  if (!item) return { title: "Caso não encontrado — AG2 Tech" };
   return {
-    title: `${item.client} — Annova System`,
+    title: `${item.client} — AG2 Tech`,
     description: item.summary,
   };
 }
@@ -142,7 +142,7 @@ export default async function CasePage({
 
               <blockquote className="rounded-2xl border border-line bg-chip/40 p-8 sm:p-10">
                 <p className="text-balance text-[20px] leading-relaxed text-ink sm:text-[24px]">
-                  &ldquo;A Annova entendeu o problema antes da gente entender.
+                  &ldquo;A AG2 Tech entendeu o problema antes da gente entender.
                   Saímos do projeto com software melhor — e com a operação
                   redesenhada.&rdquo;
                 </p>
