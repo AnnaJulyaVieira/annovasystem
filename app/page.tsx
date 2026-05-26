@@ -3,6 +3,8 @@ import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Deliverables from "@/components/Deliverables";
 import Process from "@/components/Process";
+import Cases from "@/components/Cases";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -10,8 +12,10 @@ export default function Home() {
       <Hero />
       <Clients />
       <Approach />
+      <Cases />
       <Deliverables />
       <Process />
+      <Testimonials />
       <CTA />
     </main>
   );
