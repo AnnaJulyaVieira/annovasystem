@@ -7,6 +7,7 @@ const deliverables = [
   { id: "006", label: "Cloud & DevOps", weight: "AWS · GCP · Terraform" },
   { id: "007", label: "Mobile híbrido", weight: "React Native · Expo" },
   { id: "008", label: "IA aplicada", weight: "OpenAI · Anthropic · RAG" },
+  { id: "009", label: "Aplicações low code", weight: "n8n · Retool · Bubble" },
 ];
 
 export default function Deliverables() {
