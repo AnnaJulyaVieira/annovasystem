@@ -15,12 +15,12 @@ export type CaseItem = {
 export const cases: CaseItem[] = [
   {
     slug: "autotruck-plataforma",
-    client: "AutoTruck",
+    client: "Auto Truck",
     industry: "Mobilidade · Frotas",
     year: "2025",
     title: "Plataforma web de gestão de frota e operação de caminhões.",
     summary:
-      "Sistema em produção que centraliza cadastros, manutenção e operação da frota AutoTruck em uma única interface.",
+      "Sistema em produção que centraliza cadastros, manutenção e operação da frota Auto Truck em uma única interface.",
     github: "https://github.com/AnnaJulyaVieira/AutoTruckProd",
     scope: ["Plataforma web", "Painel administrativo", "Cadastros"],
     stack: ["Next.js", "TypeScript", "Node.js"],
@@ -41,12 +41,12 @@ export const cases: CaseItem[] = [
   },
   {
     slug: "autotruck-mobile",
-    client: "AutoTruck Mobile",
+    client: "Auto Truck Mobile",
     industry: "Mobilidade · App",
     year: "2025",
-    title: "App mobile do motorista para a operação AutoTruck.",
+    title: "App mobile do motorista para a operação Auto Truck.",
     summary:
-      "Aplicativo nativo que estende a plataforma AutoTruck para o motorista em campo, com sincronização para o painel web.",
+      "Aplicativo nativo que estende a plataforma Auto Truck para o motorista em campo, com sincronização para o painel web.",
     github: "https://github.com/AnnaJulyaVieira/AutoTruckMobile",
     scope: ["App mobile", "Sincronização", "UX em campo"],
     stack: ["React Native", "Expo", "TypeScript"],

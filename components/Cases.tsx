@@ -10,9 +10,9 @@ const cases: CaseItem[] = [
   {
     id: "autotruck-plataforma",
     tag: "Mobilidade",
-    title: "Plataforma AutoTruck",
+    title: "Plataforma Auto Truck",
     description:
-      "Sistema em produção que centraliza cadastros, manutenção e operação da frota AutoTruck.",
+      "Sistema em produção que centraliza cadastros, manutenção e operação da frota Auto Truck.",
     stack: ["Next.js", "TypeScript", "Node.js"],
   },
   {
@@ -26,9 +26,9 @@ const cases: CaseItem[] = [
   {
     id: "autotruck-mobile",
     tag: "App mobile",
-    title: "AutoTruck Mobile",
+    title: "Auto Truck Mobile",
     description:
-      "Aplicativo do motorista que estende a plataforma AutoTruck para o trabalho em campo.",
+      "Aplicativo do motorista que estende a plataforma Auto Truck para o trabalho em campo.",
     stack: ["React Native", "Expo", "TypeScript"],
   },
 ];

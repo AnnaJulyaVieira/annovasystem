@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const clients = [
   {
-    name: "AutoTruck",
+    name: "Auto Truck",
     src: "/logoAutoTruck.png",
     width: 200,
     height: 64,
