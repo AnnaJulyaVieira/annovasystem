@@ -84,14 +84,6 @@ export default function ContatoPage() {
                   gente@ag2tech.com.br
                 </a>
               </li>
-              <li className="flex items-baseline gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
-                  estúdio
-                </span>
-                <span className="text-[15px] text-ink">
-                  Av. do Contorno, 6594 · Belo Horizonte, MG
-                </span>
-              </li>
             </ul>
           </div>
 

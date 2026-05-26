@@ -3,41 +3,33 @@ type CaseItem = {
   tag: string;
   title: string;
   description: string;
-  metric: string;
-  metricLabel: string;
-  trend: "up" | "down";
+  stack: string[];
 };
 
 const cases: CaseItem[] = [
   {
-    id: "saude",
-    tag: "Saúde",
-    title: "Plataforma de telemedicina",
+    id: "autotruck-plataforma",
+    tag: "Mobilidade",
+    title: "Plataforma AutoTruck",
     description:
-      "Redesenho completo da plataforma e automações entre agenda, pagamento e prontuário.",
-    metric: "+42%",
-    metricLabel: "em conversão de agendamentos",
-    trend: "up",
+      "Sistema em produção que centraliza cadastros, manutenção e operação da frota AutoTruck.",
+    stack: ["Next.js", "TypeScript", "Node.js"],
   },
   {
-    id: "logistica",
-    tag: "Logística",
-    title: "Portal do transportador",
+    id: "tereza-personalizados",
+    tag: "E-commerce",
+    title: "Tereza Personalizados",
     description:
-      "Automação de coletas e integrações com TMS para reduzir falhas e retrabalho operacional.",
-    metric: "-63%",
-    metricLabel: "no tempo operacional",
-    trend: "down",
+      "Vitrine digital com catálogo de produtos personalizados e canal direto de orçamento.",
+    stack: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
-    id: "educacao",
-    tag: "Educação",
-    title: "Geração de leads B2B",
+    id: "autotruck-mobile",
+    tag: "App mobile",
+    title: "AutoTruck Mobile",
     description:
-      "Nova landing + CRM integrado + automações de nutrição e scoring.",
-    metric: "3x",
-    metricLabel: "mais leads qualificados",
-    trend: "up",
+      "Aplicativo do motorista que estende a plataforma AutoTruck para o trabalho em campo.",
+    stack: ["React Native", "Expo", "TypeScript"],
   },
 ];
 
@@ -65,7 +57,7 @@ export default function Cases() {
             </h2>
           </div>
           <p className="max-w-sm text-[14.5px] leading-relaxed text-ink-soft">
-            Projetos diferentes. Resultados que se medem.
+            Projetos diferentes. Mesma forma de entregar.
           </p>
         </div>
 
@@ -94,19 +86,18 @@ export default function Cases() {
 
                 <div className="mt-8 border-t border-line pt-6">
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
-                    Resultado gerado
+                    Stack
                   </span>
-                  <div className="mt-3 flex items-end justify-between gap-4">
-                    <div>
-                      <div className="text-[34px] font-bold leading-none tracking-[-0.02em] text-ink sm:text-[40px]">
-                        {c.metric}
-                      </div>
-                      <div className="mt-2 text-[13px] leading-relaxed text-ink-soft">
-                        {c.metricLabel}
-                      </div>
-                    </div>
-                    <Sparkline trend={c.trend} />
-                  </div>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {c.stack.map((s) => (
+                      <li
+                        key={s}
+                        className="rounded-full border border-line px-3 py-1 font-mono text-[11px] uppercase tracking-[0.12em] text-ink-soft"
+                      >
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div className="mt-8 flex items-center gap-2 text-[13.5px] font-medium text-ink">
@@ -133,26 +124,5 @@ export default function Cases() {
         </div>
       </div>
     </section>
-  );
-}
-
-function Sparkline({ trend }: { trend: "up" | "down" }) {
-  const up = "M0 22 L12 18 L24 20 L36 12 L48 14 L60 8 L72 10 L84 4";
-  const down = "M0 6 L12 10 L24 8 L36 14 L48 12 L60 18 L72 16 L84 22";
-  return (
-    <svg
-      viewBox="0 0 84 26"
-      width="92"
-      height="28"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="text-ink"
-      aria-hidden="true"
-    >
-      <path d={trend === "up" ? up : down} />
-    </svg>
   );
 }

@@ -11,12 +11,11 @@ export const metadata: Metadata = {
 
 const industries = [
   "Todos",
-  "Fintech",
-  "Logística",
-  "Health",
-  "Agro",
-  "Edtech",
-  "RH",
+  "Mobilidade",
+  "E-commerce",
+  "App",
+  "Personalização",
+  "Marketplace",
 ];
 
 export default function TrabalhoPage() {
