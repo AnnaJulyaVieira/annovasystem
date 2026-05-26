@@ -84,7 +84,7 @@ export default function Header() {
   return (
     <header
       id="topo"
-      className="sticky top-0 z-50 w-full border-b border-line bg-white/85 backdrop-blur"
+      className="sticky top-0 z-50 w-full border-b border-line-dark bg-bg-dark text-on-dark"
       onMouseLeave={() => setHovered(null)}
     >
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-6">
@@ -100,7 +100,7 @@ export default function Header() {
             width={1331}
             height={201}
             priority
-            className="h-9 w-auto"
+            className="h-9 w-auto brightness-0 invert"
           />
         </Link>
 
@@ -125,8 +125,8 @@ export default function Header() {
                       className={[
                         "flex items-center gap-1.5 px-3 py-2 text-[13px] transition-colors",
                         isOpen
-                          ? "text-ink"
-                          : "text-ink-soft hover:text-ink",
+                          ? "text-on-dark"
+                          : "text-on-dark-soft hover:text-on-dark",
                       ].join(" ")}
                     >
                       {item.label}
@@ -140,7 +140,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href!}
-                      className="flex items-center px-3 py-2 text-[13px] text-ink-soft transition-colors hover:text-ink"
+                      className="flex items-center px-3 py-2 text-[13px] text-on-dark-soft transition-colors hover:text-on-dark"
                     >
                       {item.label}
                     </Link>
@@ -156,16 +156,16 @@ export default function Header() {
             type="button"
             aria-label="Buscar"
             onClick={() => setSearchOpen(true)}
-            className="hidden h-9 w-9 items-center justify-center rounded-full text-ink-soft transition-colors hover:bg-chip hover:text-ink md:inline-flex"
+            className="hidden h-9 w-9 items-center justify-center rounded-full text-on-dark-soft transition-colors hover:bg-line-dark hover:text-on-dark md:inline-flex"
           >
             <SearchIcon />
           </button>
 
-          <span className="hidden h-5 w-px bg-line md:block" />
+          <span className="hidden h-5 w-px bg-line-dark md:block" />
 
           <Link
             href="/contato"
-            className="hidden h-10 items-center gap-1.5 rounded-full bg-ink px-5 text-[13px] font-medium text-on-dark transition-transform hover:-translate-y-px md:inline-flex"
+            className="hidden h-10 items-center gap-1.5 rounded-full bg-on-dark px-5 text-[13px] font-medium text-ink transition-transform hover:-translate-y-px md:inline-flex"
           >
             Iniciar projeto
             <span aria-hidden="true">→</span>
@@ -177,7 +177,7 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full text-ink transition-colors hover:bg-chip md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-full text-on-dark transition-colors hover:bg-line-dark md:hidden"
           >
             {open ? <IconClose /> : <IconBurger />}
           </button>
@@ -192,7 +192,7 @@ export default function Header() {
             key={item.label}
             onMouseEnter={() => setHovered(item.label)}
             className={[
-              "absolute inset-x-0 top-full hidden border-b border-line bg-white shadow-[0_30px_60px_-30px_rgba(10,10,10,0.18)] transition-all duration-200 md:block",
+              "absolute inset-x-0 top-full hidden border-b border-line-dark bg-bg-dark text-on-dark shadow-[0_30px_60px_-30px_rgba(0,0,0,0.6)] transition-all duration-200 md:block",
               isOpen
                 ? "pointer-events-auto translate-y-0 opacity-100"
                 : "pointer-events-none -translate-y-1 opacity-0",
@@ -205,19 +205,19 @@ export default function Header() {
                     <Link
                       href={sub.href}
                       onClick={() => setHovered(null)}
-                      className="group block rounded-lg px-3 py-2.5 transition-colors hover:bg-chip"
+                      className="group block rounded-lg px-3 py-2.5 transition-colors hover:bg-line-dark"
                     >
-                      <span className="flex items-center gap-1.5 text-[13.5px] font-medium text-ink">
+                      <span className="flex items-center gap-1.5 text-[13.5px] font-medium text-on-dark">
                         {sub.label}
                         <span
                           aria-hidden="true"
-                          className="text-ink-soft transition-transform group-hover:translate-x-0.5"
+                          className="text-on-dark-soft transition-transform group-hover:translate-x-0.5"
                         >
                           →
                         </span>
                       </span>
                       {sub.desc && (
-                        <span className="mt-0.5 block text-[12px] leading-snug text-ink-soft">
+                        <span className="mt-0.5 block text-[12px] leading-snug text-on-dark-soft">
                           {sub.desc}
                         </span>
                       )}
@@ -235,14 +235,14 @@ export default function Header() {
         aria-hidden={!open}
         className={[
           "md:hidden",
-          "fixed inset-x-0 top-16 z-40 origin-top overflow-y-auto border-b border-line bg-white transition-[max-height,opacity] duration-300 ease-out",
+          "fixed inset-x-0 top-16 z-40 origin-top overflow-y-auto border-b border-line-dark bg-bg-dark text-on-dark transition-[max-height,opacity] duration-300 ease-out",
           open
             ? "max-h-[calc(100vh-4rem)] opacity-100"
             : "pointer-events-none max-h-0 opacity-0",
         ].join(" ")}
       >
         <nav className="mx-auto flex max-w-7xl flex-col px-6 pt-6 pb-8">
-          <ul className="flex flex-col divide-y divide-line border-y border-line">
+          <ul className="flex flex-col divide-y divide-line-dark border-y border-line-dark">
             {navItems.map((item) => {
               const isExpanded = mobileExpanded === item.label;
               if (!item.items) {
@@ -251,10 +251,10 @@ export default function Header() {
                     <Link
                       href={item.href!}
                       onClick={() => setOpen(false)}
-                      className="flex items-center justify-between py-4 text-[18px] font-semibold tracking-tight text-ink"
+                      className="flex items-center justify-between py-4 text-[18px] font-semibold tracking-tight text-on-dark"
                     >
                       {item.label}
-                      <span className="text-ink-soft" aria-hidden="true">
+                      <span className="text-on-dark-soft" aria-hidden="true">
                         →
                       </span>
                     </Link>
@@ -269,7 +269,7 @@ export default function Header() {
                       setMobileExpanded(isExpanded ? null : item.label)
                     }
                     aria-expanded={isExpanded}
-                    className="flex w-full items-center justify-between py-4 text-left text-[18px] font-semibold tracking-tight text-ink"
+                    className="flex w-full items-center justify-between py-4 text-left text-[18px] font-semibold tracking-tight text-on-dark"
                   >
                     {item.label}
                     <Chevron
@@ -293,7 +293,7 @@ export default function Header() {
                           <Link
                             href={sub.href}
                             onClick={() => setOpen(false)}
-                            className="flex items-center justify-between py-2.5 text-[15px] text-ink-soft"
+                            className="flex items-center justify-between py-2.5 text-[15px] text-on-dark-soft"
                           >
                             {sub.label}
                             <span aria-hidden="true">→</span>
@@ -313,7 +313,7 @@ export default function Header() {
               setOpen(false);
               setSearchOpen(true);
             }}
-            className="mt-6 flex w-full items-center gap-2.5 rounded-full border border-line px-4 py-3 text-[14px] font-medium text-ink-soft"
+            className="mt-6 flex w-full items-center gap-2.5 rounded-full border border-line-dark px-4 py-3 text-[14px] font-medium text-on-dark-soft"
           >
             <SearchIcon />
             Buscar no site
@@ -323,7 +323,7 @@ export default function Header() {
             <Link
               href="/contato"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-between rounded-full bg-ink px-5 py-3.5 text-[14px] font-medium text-on-dark"
+              className="inline-flex items-center justify-between rounded-full bg-on-dark px-5 py-3.5 text-[14px] font-medium text-ink"
             >
               Iniciar projeto
               <span aria-hidden="true">→</span>
@@ -331,16 +331,16 @@ export default function Header() {
             <a
               href="mailto:hello@ag2tech.com.br"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-between rounded-full border border-line px-5 py-3.5 text-[14px] font-medium text-ink"
+              className="inline-flex items-center justify-between rounded-full border border-line-dark px-5 py-3.5 text-[14px] font-medium text-on-dark"
             >
               hello@ag2tech.com.br
-              <span className="text-ink-soft" aria-hidden="true">
+              <span className="text-on-dark-soft" aria-hidden="true">
                 →
               </span>
             </a>
           </div>
 
-          <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
+          <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
             belo horizonte · brasil
           </p>
         </nav>

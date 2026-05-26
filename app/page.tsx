@@ -5,6 +5,7 @@ import Deliverables from "@/components/Deliverables";
 import Process from "@/components/Process";
 import Cases from "@/components/Cases";
 import Testimonials from "@/components/Testimonials";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Deliverables />
       <Process />
       <Testimonials />
+      <Faq />
       <CTA />
     </main>
   );
