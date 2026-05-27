@@ -16,52 +16,52 @@ export const cases: CaseItem[] = [
   {
     slug: "autotruck-plataforma",
     client: "Auto Truck",
-    industry: "Mobilidade · Frotas",
+    industry: "Automotivo · Agendamento",
     year: "2025",
-    title: "Plataforma web de gestão de frota e operação de caminhões.",
+    title: "Site de agendamento de lavagem da associação Auto Truck.",
     summary:
-      "Sistema em produção que centraliza cadastros, manutenção e operação da frota Auto Truck em uma única interface.",
+      "Plataforma web onde o associado da Auto Truck agenda a lavagem do veículo escolhendo data e horário disponíveis, sem precisar ligar para a sede.",
     github: "https://github.com/AnnaJulyaVieira/AutoTruckProd",
-    scope: ["Plataforma web", "Painel administrativo", "Cadastros"],
+    scope: ["Plataforma web", "Agendamento", "Gestão de horários"],
     stack: ["Next.js", "TypeScript", "Node.js"],
     story: [
       {
         heading: "O problema",
-        body: "A operação rodava em planilhas e ferramentas desconectadas, dificultando o acompanhamento da frota em tempo real.",
+        body: "O agendamento de lavagem era feito por telefone e WhatsApp, gerando dupla marcação, falhas de comunicação e perda de horário disponível.",
       },
       {
         heading: "O que fizemos",
-        body: "Construímos uma plataforma web centralizada com fluxos pensados em torno do operador, integrando cadastro, manutenção e ordens de serviço.",
+        body: "Construímos um site onde o associado escolhe data e horário em uma agenda visual, vê o histórico de lavagens e a equipe controla a operação do outro lado.",
       },
       {
         heading: "Resultado",
-        body: "Operação consolidada em uma única tela, com visibilidade ponta a ponta da frota e do histórico de cada caminhão.",
+        body: "Agenda centralizada, sem dupla marcação, e o associado deixou de depender da sede para marcar uma lavagem.",
       },
     ],
   },
   {
     slug: "autotruck-mobile",
     client: "Auto Truck Mobile",
-    industry: "Mobilidade · App",
+    industry: "Associação · App do membro",
     year: "2025",
-    title: "App mobile do motorista para a operação Auto Truck.",
+    title: "App do associado da Auto Truck para consulta de veículos e boletos.",
     summary:
-      "Aplicativo nativo que estende a plataforma Auto Truck para o motorista em campo, com sincronização para o painel web.",
+      "Aplicativo mobile onde o associado da Auto Truck consulta os veículos vinculados, boletos em aberto, comprovantes e informações da associação.",
     github: "https://github.com/AnnaJulyaVieira/AutoTruckMobile",
-    scope: ["App mobile", "Sincronização", "UX em campo"],
+    scope: ["App mobile", "Conta do associado", "Boletos e veículos"],
     stack: ["React Native", "Expo", "TypeScript"],
     story: [
       {
         heading: "O problema",
-        body: "O motorista precisava de uma forma simples de acessar ordens, registrar ocorrências e consultar dados sem depender do navegador.",
+        body: "Para saber qual veículo estava vinculado, baixar um boleto ou consultar pagamentos, o associado precisava ligar ou ir até a sede.",
       },
       {
         heading: "O que fizemos",
-        body: "App enxuto em React Native, focado nas ações de campo, com sincronização automática para a plataforma web.",
+        body: "App em React Native que centraliza tudo no bolso do associado: veículos vinculados, boletos em aberto, histórico e dados da associação em uma interface direta.",
       },
       {
         heading: "Resultado",
-        body: "Tempo de registro de ocorrência caiu drasticamente, e o motorista deixou de depender do escritório para tarefas simples.",
+        body: "O associado consulta o que precisa em segundos e a sede deixou de ser canal de informação simples — sobra tempo pro que realmente importa.",
       },
     ],
   },
@@ -92,28 +92,28 @@ export const cases: CaseItem[] = [
     ],
   },
   {
-    slug: "mercado-livre",
-    client: "Mercado Livre",
-    industry: "E-commerce · Marketplace",
+    slug: "cannon-parts",
+    client: "Cannon Parts",
+    industry: "E-commerce · Autopeças",
     year: "2024",
-    title: "Clone do Mercado Livre como estudo de plataforma de e-commerce.",
+    title: "Loja online de autopeças Cannon Parts.",
     summary:
-      "Implementação de uma plataforma estilo Mercado Livre com listagem, busca e fluxo de produto, explorando arquitetura de marketplace.",
+      "Plataforma de e-commerce da Cannon Parts com catálogo de autopeças, busca, detalhe de produto e fluxo de pedido.",
     github: "https://github.com/AnnaJulyaVieira/mercadoLivre",
     scope: ["Plataforma web", "Busca e listagem", "Página de produto"],
     stack: ["React", "Node.js", "TypeScript"],
     story: [
       {
         heading: "Objetivo",
-        body: "Explorar os padrões de UX e arquitetura por trás de um marketplace de grande escala, replicando os fluxos centrais.",
+        body: "Tirar a Cannon Parts do off-line e dar à loja uma vitrine própria com fluxo enxuto de busca e compra de peças.",
       },
       {
         heading: "O que fizemos",
-        body: "Implementação dos fluxos de busca, listagem e detalhe de produto, com foco em componentes reutilizáveis e performance.",
+        body: "Implementação dos fluxos de busca, listagem e detalhe de produto, com componentes reutilizáveis e foco em performance.",
       },
       {
         heading: "Resultado",
-        body: "Base sólida de aprendizado em marketplace e padrão de UI reaproveitável em outros projetos do estúdio.",
+        body: "Vitrine digital pronta pra escalar, com identidade própria e padrão de UI reaproveitável em outros projetos.",
       },
     ],
   },
