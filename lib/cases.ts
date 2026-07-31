@@ -87,6 +87,31 @@ export const cases: CaseItem[] = [
       },
     ],
   },
+  {
+    slug: "glt-motors",
+    client: "GLT Motors",
+    industry: "E-commerce · Motos e carros",
+    year: "2025",
+    title: "Loja online de venda de motos e carros da GLT Motors.",
+    summary:
+      "Plataforma de e-commerce da GLT Motors com catálogo de veículos, busca, detalhe de anúncio e fluxo de contato com o comprador.",
+    scope: ["Plataforma web", "Catálogo de veículos", "Busca e filtros"],
+    stack: ["Next.js", "TypeScript", "Node.js"],
+    story: [
+      {
+        heading: "Objetivo",
+        body: "Dar à GLT Motors uma vitrine própria pra vender motos e carros online, com catálogo organizado e busca por filtros.",
+      },
+      {
+        heading: "O que fizemos",
+        body: "Construímos o catálogo de veículos, a busca com filtros e a página de detalhe de cada anúncio, com fluxo direto de contato com o comprador.",
+      },
+      {
+        heading: "Resultado",
+        body: "Vitrine digital pronta pra escalar o estoque, com identidade própria e padrão de UI reaproveitável em outros projetos.",
+      },
+    ],
+  },
 ];
 
 export function getCase(slug: string): CaseItem | undefined {

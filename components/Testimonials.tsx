@@ -13,33 +13,33 @@ const pages: Testimonial[][] = [
   [
     {
       quote:
-        "A AG2 tech virou parte do nosso time. Entregaram mais que tecnologia: visão de produto e resultado no nosso dia a dia.",
-      initials: "VS",
-      name: "Victor S.",
-      role: "CTO na SaúdePlena",
+        "O agendamento de lavagem virou simples pros nossos associados. A AG2 Tech entendeu a operação antes de escrever a primeira linha de código.",
+      initials: "P",
+      name: "Pedro",
+      role: "Auto Truck",
     },
     {
       quote:
-        "Do diagnóstico à operação, o processo é claro e transparente. Em 3 meses, nossa operação mudou de patamar.",
-      initials: "LP",
-      name: "Larissa P.",
-      role: "Head de Operações na LogiWay",
+        "Do diagnóstico à operação, o processo foi claro e transparente. A equipe entregou exatamente o que a GLT precisava.",
+      initials: "G",
+      name: "Gabriel",
+      role: "GLT",
     },
   ],
   [
     {
       quote:
-        "Squad sênior, comunicação assíncrona impecável e código limpo. Conseguimos escalar sem dor.",
-      initials: "MR",
-      name: "Marcos R.",
-      role: "Head de Engenharia na EduMais",
+        "A loja online tirou a Cannon Parts do off-line com uma vitrine própria e um fluxo de compra enxuto. Resultado rápido e sólido.",
+      initials: "J",
+      name: "Julio",
+      role: "Cannon Parts",
     },
     {
       quote:
-        "Conseguiram traduzir um problema confuso em um produto enxuto. O ROI veio no primeiro trimestre.",
-      initials: "CB",
-      name: "Camila B.",
-      role: "Diretora de Produto na FinHub",
+        "O site deu à Tereza Personalizados um catálogo profissional e encurtou o caminho entre o primeiro contato e o pedido fechado.",
+      initials: "D",
+      name: "Diego",
+      role: "Tereza Personalizados",
     },
   ],
 ];

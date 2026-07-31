@@ -6,28 +6,28 @@ const clients = [
     src: "/logoAutoTruck.png",
     width: 200,
     height: 64,
-    imgClassName: "h-14 w-auto brightness-0 sm:h-16",
+    imgClassName: "brightness-0",
   },
   {
     name: "Tereza Personalizados e Festas",
     src: "/logoTerezaPersonalizados.png",
     width: 220,
     height: 72,
-    imgClassName: "h-10 w-auto brightness-0 sm:h-12",
+    imgClassName: "brightness-0",
   },
   {
     name: "GLT",
     src: "/logoGlt.jpeg",
     width: 200,
     height: 64,
-    imgClassName: "h-14 w-auto invert mix-blend-multiply sm:h-16",
+    imgClassName: "invert mix-blend-multiply",
   },
   {
     name: "Cannon Parts",
     src: "/cannon-parts-logo.png",
     width: 200,
     height: 64,
-    imgClassName: "h-14 w-auto brightness-0 sm:h-16",
+    imgClassName: "brightness-0",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function Clients() {
         {clients.map((c) => (
           <li
             key={c.name}
-            className="flex shrink-0 items-center"
+            className="flex h-12 shrink-0 items-center sm:h-14"
             aria-label={c.name}
           >
             <Image
@@ -58,7 +58,7 @@ export default function Clients() {
               alt={c.name}
               width={c.width}
               height={c.height}
-              className={c.imgClassName}
+              className={`h-full w-auto object-contain ${c.imgClassName}`}
             />
           </li>
         ))}

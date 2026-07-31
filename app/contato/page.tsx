@@ -64,28 +64,6 @@ export default function ContatoPage() {
               </li>
               <li className="flex items-baseline gap-4">
                 <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
-                  imprensa
-                </span>
-                <a
-                  href="mailto:imprensa@ag2tech.com.br"
-                  className="text-[15px] text-ink underline underline-offset-4"
-                >
-                  imprensa@ag2tech.com.br
-                </a>
-              </li>
-              <li className="flex items-baseline gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
-                  gente
-                </span>
-                <a
-                  href="mailto:gente@ag2tech.com.br"
-                  className="text-[15px] text-ink underline underline-offset-4"
-                >
-                  gente@ag2tech.com.br
-                </a>
-              </li>
-              <li className="flex items-baseline gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
                   telefone
                 </span>
                 <a

@@ -23,6 +23,22 @@ const cases: CaseItem[] = [
       "Vitrine digital com catálogo de produtos personalizados e canal direto de orçamento.",
     stack: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
+  {
+    id: "cannon-parts",
+    tag: "E-commerce",
+    title: "Cannon Parts",
+    description:
+      "Loja online de autopeças com busca, listagem e página de produto prontas pra escalar.",
+    stack: ["React", "Node.js", "TypeScript"],
+  },
+  {
+    id: "glt-motors",
+    tag: "E-commerce",
+    title: "GLT Motors",
+    description:
+      "Loja online de venda de motos e carros, com catálogo, busca por filtros e página de anúncio.",
+    stack: ["Next.js", "TypeScript", "Node.js"],
+  },
 ];
 
 export default function Cases() {

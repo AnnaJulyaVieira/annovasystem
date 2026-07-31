@@ -38,23 +38,6 @@ export default function Deliverables() {
               Tecnologia bem aplicada vira artefato concreto: produto no ar,
               relatório que decide, integração que economiza horas todo dia.
             </p>
-
-            <div className="mt-10 rounded-2xl border border-line-dark p-5">
-              <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
-                <span className="inline-block h-1.5 w-1.5 rounded-full bg-on-dark animate-blink" />
-                disponibilidade
-              </div>
-              <p className="mt-3 text-[14px] leading-relaxed text-on-dark-soft">
-                Iniciando squads em junho — agenda Q3 com{" "}
-                <span className="text-on-dark">2 vagas</span> abertas.
-              </p>
-              <a
-                href="#contato"
-                className="mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-on-dark hover:underline underline-offset-4"
-              >
-                Reservar uma conversa →
-              </a>
-            </div>
           </div>
 
           <ul className="divide-y divide-line-dark border-y border-line-dark">
