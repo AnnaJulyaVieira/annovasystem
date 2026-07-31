@@ -23,14 +23,6 @@ const cases: CaseItem[] = [
       "Vitrine digital com catálogo de produtos personalizados e canal direto de orçamento.",
     stack: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
-  {
-    id: "autotruck-mobile",
-    tag: "App do associado",
-    title: "Auto Truck Mobile",
-    description:
-      "App em que o associado consulta veículos vinculados, boletos em aberto e dados da associação.",
-    stack: ["React Native", "Expo", "TypeScript"],
-  },
 ];
 
 export default function Cases() {

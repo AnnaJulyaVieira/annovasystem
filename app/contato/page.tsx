@@ -84,6 +84,17 @@ export default function ContatoPage() {
                   gente@ag2tech.com.br
                 </a>
               </li>
+              <li className="flex items-baseline gap-4">
+                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
+                  telefone
+                </span>
+                <a
+                  href="tel:+5531984105960"
+                  className="text-[15px] text-ink underline underline-offset-4"
+                >
+                  31 98410-5960
+                </a>
+              </li>
             </ul>
           </div>
 

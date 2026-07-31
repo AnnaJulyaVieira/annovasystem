@@ -22,6 +22,13 @@ const clients = [
     height: 64,
     imgClassName: "h-14 w-auto invert mix-blend-multiply sm:h-16",
   },
+  {
+    name: "Cannon Parts",
+    src: "/cannon-parts-logo.png",
+    width: 200,
+    height: 64,
+    imgClassName: "h-14 w-auto brightness-0 sm:h-16",
+  },
 ];
 
 export default function Clients() {

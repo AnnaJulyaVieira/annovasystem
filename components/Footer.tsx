@@ -26,7 +26,6 @@ const footerCols = [
       { label: "hello@ag2tech.com.br", href: "mailto:hello@ag2tech.com.br" },
       { label: "Belo Horizonte · Brasil", href: "#" },
       { label: "LinkedIn", href: "#" },
-      { label: "GitHub", href: "#" },
     ],
   },
 ];
@@ -48,7 +47,7 @@ export default function Footer() {
             </Link>
             <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-on-dark-soft">
               Estúdio de engenharia digital. Construindo software que parece
-              simples — desde 2019.
+              simples — desde 2021.
             </p>
           </div>
 

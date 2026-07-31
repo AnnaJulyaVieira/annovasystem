@@ -1,4 +1,4 @@
-import { BarChart3, CloudCog, Code2, Workflow, type LucideIcon } from "lucide-react";
+import { Layers, LineChart, Network, Server, type LucideIcon } from "lucide-react";
 
 type Capability = {
   num: string;
@@ -15,7 +15,7 @@ const capabilities: Capability[] = [
     title: "Produtos digitais sob medida",
     description:
       "Web apps, plataformas internas e SaaS desenhados em torno do problema real — não em torno de templates.",
-    Icon: Code2,
+    Icon: Layers,
     span: "sm:col-span-2",
     invert: true,
   },
@@ -24,21 +24,21 @@ const capabilities: Capability[] = [
     title: "Integrações & automações",
     description:
       "APIs, ETLs e workflows que conectam sistemas legados, ERPs e ferramentas SaaS sem ruído.",
-    Icon: Workflow,
+    Icon: Network,
   },
   {
     num: "03",
     title: "Dados & dashboards",
     description:
       "Pipelines, modelagem e painéis que transformam dado bruto em decisão diária.",
-    Icon: BarChart3,
+    Icon: LineChart,
   },
   {
     num: "04",
     title: "Cloud & infraestrutura",
     description:
       "Arquitetura, observabilidade e CI/CD para crescer com previsibilidade de custo.",
-    Icon: CloudCog,
+    Icon: Server,
     span: "sm:col-span-2",
   },
 ];

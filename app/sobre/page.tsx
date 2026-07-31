@@ -5,7 +5,7 @@ import BackLink from "@/components/BackLink";
 export const metadata: Metadata = {
   title: "Sobre — AG2 Tech",
   description:
-    "Estúdio de engenharia digital fundado em 2019. Times pequenos, processo objetivo, software que dura.",
+    "Estúdio de engenharia digital fundado em 2021. Times pequenos, processo objetivo, software que dura.",
 };
 
 const principles = [
@@ -31,23 +31,11 @@ const principles = [
   },
 ];
 
-const team = [
-  { name: "Marina Sato", role: "CEO & Head of Engineering", years: "12y" },
-  { name: "Rafael Andrade", role: "Tech Lead · Backend", years: "10y" },
-  { name: "Júlia Vieira", role: "Tech Lead · Frontend", years: "8y" },
-  { name: "Pedro Lacerda", role: "Head of Design", years: "11y" },
-  { name: "Camila Reis", role: "Data & Analytics Lead", years: "9y" },
-  { name: "Henrique Costa", role: "Cloud & DevOps Lead", years: "9y" },
-  { name: "Bruna Tavares", role: "Product Lead", years: "7y" },
-  { name: "Iago Menezes", role: "Engineering Manager", years: "8y" },
-];
-
 const timeline = [
-  { year: "2019", event: "AG2 Tech é fundada em Belo Horizonte com 3 pessoas." },
-  { year: "2021", event: "Primeiro contrato de squad dedicado com fintech." },
-  { year: "2022", event: "Equipe cresce para 14 e abrimos a área de dados." },
-  { year: "2024", event: "Lançamos o framework interno de discovery rápido." },
-  { year: "2026", event: "Time de 22 pessoas e 60+ projetos em produção." },
+  { name: "Pedro", client: "Auto Truck" },
+  { name: "Gabriel", client: "GLT" },
+  { name: "Julio", client: "Cannon Parts" },
+  { name: "Diego", client: "Tereza Personalizados" },
 ];
 
 export default function SobrePage() {
@@ -70,7 +58,7 @@ export default function SobrePage() {
             </span>
           </h1>
           <p className="mt-8 max-w-2xl text-[16px] leading-relaxed text-on-dark-soft">
-            A AG2 Tech é um estúdio de engenharia digital fundado em 2019.
+            A AG2 Tech é um estúdio de engenharia digital fundado em 2021.
             Construímos software pra empresas que precisam de tecnologia bem
             feita, mas não querem (ou não precisam) montar uma fábrica interna.
           </p>
@@ -80,7 +68,7 @@ export default function SobrePage() {
       <section className="border-b border-line bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-6 py-14 sm:grid-cols-4">
           {[
-            { label: "Fundada em", value: "2019" },
+            { label: "Fundada em", value: "2021" },
             { label: "Pessoas", value: "22" },
             { label: "Squads ativos", value: "12" },
             { label: "Projetos no ar", value: "60+" },
@@ -130,70 +118,29 @@ export default function SobrePage() {
         </div>
       </section>
 
-      <section className="border-y border-line-dark bg-bg-dark text-on-dark">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
-                <span className="h-px w-8 bg-on-dark-soft/60" />
-                <span>time</span>
-              </div>
-              <h2 className="mt-4 text-balance text-[34px] font-bold leading-[1.05] tracking-[-0.02em] sm:text-[44px] lg:text-[52px]">
-                Gente sênior,
-                <br />
-                <span className="text-on-dark-soft">do começo ao fim.</span>
-              </h2>
-            </div>
-            <p className="max-w-sm text-[14.5px] leading-relaxed text-on-dark-soft">
-              Sem pirâmide. Quem desenha é quem implementa, quem implementa é
-              quem sustenta.
-            </p>
-          </div>
-
-          <ul className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-line-dark sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((p) => (
-              <li
-                key={p.name}
-                className="group bg-bg-dark p-6 transition-colors hover:bg-bg-darker"
-              >
-                <div className="flex h-32 items-end">
-                  <span className="font-mono text-[40px] font-bold leading-none text-on-dark/20 transition-colors group-hover:text-on-dark/40">
-                    {p.years}
-                  </span>
-                </div>
-                <h3 className="mt-6 text-[15px] font-semibold tracking-tight text-on-dark">
-                  {p.name}
-                </h3>
-                <p className="mt-1 text-[12.5px] text-on-dark-soft">{p.role}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
           <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
             <span className="h-px w-8 bg-ink-soft/60" />
-            <span>linha do tempo</span>
+            <span>histórico</span>
           </div>
           <h2 className="mt-4 max-w-3xl text-balance text-[34px] font-bold leading-[1.05] tracking-[-0.02em] text-ink sm:text-[44px] lg:text-[52px]">
-            Sete anos
+            Quem confiou
             <br />
-            <span className="text-ink-soft">de aprendizado em produção.</span>
+            <span className="text-ink-soft">e quem cuidou de cada projeto.</span>
           </h2>
 
           <ol className="mt-14 grid grid-cols-1 divide-y divide-line border-y border-line">
             {timeline.map((t) => (
               <li
-                key={t.year}
+                key={t.name}
                 className="grid grid-cols-12 items-baseline gap-6 py-7"
               >
-                <span className="col-span-12 font-mono text-[28px] font-bold tracking-tight text-ink sm:col-span-2">
-                  {t.year}
+                <span className="col-span-12 font-mono text-[20px] font-bold tracking-tight text-ink sm:col-span-2">
+                  {t.name}
                 </span>
                 <p className="col-span-12 text-[15.5px] leading-relaxed text-ink-soft sm:col-span-10">
-                  {t.event}
+                  {t.client}
                 </p>
               </li>
             ))}

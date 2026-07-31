@@ -5,7 +5,6 @@ export type CaseItem = {
   year: string;
   title: string;
   summary: string;
-  github?: string;
   scope: string[];
   stack: string[];
   metrics?: { label: string; value: string }[];
@@ -21,7 +20,6 @@ export const cases: CaseItem[] = [
     title: "Site de agendamento de lavagem da associação Auto Truck.",
     summary:
       "Plataforma web onde o associado da Auto Truck agenda a lavagem do veículo escolhendo data e horário disponíveis, sem precisar ligar para a sede.",
-    github: "https://github.com/AnnaJulyaVieira/AutoTruckProd",
     scope: ["Plataforma web", "Agendamento", "Gestão de horários"],
     stack: ["Next.js", "TypeScript", "Node.js"],
     story: [
@@ -40,32 +38,6 @@ export const cases: CaseItem[] = [
     ],
   },
   {
-    slug: "autotruck-mobile",
-    client: "Auto Truck Mobile",
-    industry: "Associação · App do membro",
-    year: "2025",
-    title: "App do associado da Auto Truck para consulta de veículos e boletos.",
-    summary:
-      "Aplicativo mobile onde o associado da Auto Truck consulta os veículos vinculados, boletos em aberto, comprovantes e informações da associação.",
-    github: "https://github.com/AnnaJulyaVieira/AutoTruckMobile",
-    scope: ["App mobile", "Conta do associado", "Boletos e veículos"],
-    stack: ["React Native", "Expo", "TypeScript"],
-    story: [
-      {
-        heading: "O problema",
-        body: "Para saber qual veículo estava vinculado, baixar um boleto ou consultar pagamentos, o associado precisava ligar ou ir até a sede.",
-      },
-      {
-        heading: "O que fizemos",
-        body: "App em React Native que centraliza tudo no bolso do associado: veículos vinculados, boletos em aberto, histórico e dados da associação em uma interface direta.",
-      },
-      {
-        heading: "Resultado",
-        body: "O associado consulta o que precisa em segundos e a sede deixou de ser canal de informação simples — sobra tempo pro que realmente importa.",
-      },
-    ],
-  },
-  {
     slug: "tereza-personalizados",
     client: "Tereza Personalizados",
     industry: "E-commerce · Personalização",
@@ -73,7 +45,6 @@ export const cases: CaseItem[] = [
     title: "Site da Tereza Personalizados e Festas.",
     summary:
       "Vitrine digital para a Tereza Personalizados, com catálogo de produtos personalizados e canal direto de orçamento.",
-    github: "https://github.com/AnnaJulyaVieira/terezaPersonalizados",
     scope: ["Site institucional", "Catálogo", "Identidade visual"],
     stack: ["Next.js", "Tailwind CSS", "TypeScript"],
     story: [
@@ -99,7 +70,6 @@ export const cases: CaseItem[] = [
     title: "Loja online de autopeças Cannon Parts.",
     summary:
       "Plataforma de e-commerce da Cannon Parts com catálogo de autopeças, busca, detalhe de produto e fluxo de pedido.",
-    github: "https://github.com/AnnaJulyaVieira/mercadoLivre",
     scope: ["Plataforma web", "Busca e listagem", "Página de produto"],
     stack: ["React", "Node.js", "TypeScript"],
     story: [
