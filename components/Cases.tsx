@@ -31,14 +31,6 @@ const cases: CaseItem[] = [
       "Loja online de autopeças com busca, listagem e página de produto prontas pra escalar.",
     stack: ["React", "Node.js", "TypeScript"],
   },
-  {
-    id: "glt-motors",
-    tag: "E-commerce",
-    title: "GLT Motors",
-    description:
-      "Loja online de venda de motos e carros, com catálogo, busca por filtros e página de anúncio.",
-    stack: ["Next.js", "TypeScript", "Node.js"],
-  },
 ];
 
 export default function Cases() {

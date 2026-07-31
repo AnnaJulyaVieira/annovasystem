@@ -20,7 +20,7 @@ const clients = [
     src: "/logoGlt.jpeg",
     width: 200,
     height: 64,
-    imgClassName: "invert mix-blend-multiply",
+    imgClassName: "invert mix-blend-multiply scale-110",
   },
   {
     name: "Cannon Parts",
