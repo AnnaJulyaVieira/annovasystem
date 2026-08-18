@@ -138,12 +138,10 @@ export default async function CasePage({
 
               <blockquote className="rounded-2xl border border-line bg-chip/40 p-8 sm:p-10">
                 <p className="text-balance text-[20px] leading-relaxed text-ink sm:text-[24px]">
-                  &ldquo;A AG2 Tech entendeu o problema antes da gente entender.
-                  Saímos do projeto com software melhor — e com a operação
-                  redesenhada.&rdquo;
+                  &ldquo;{item.testimonial.quote}&rdquo;
                 </p>
                 <footer className="mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">
-                  — Diretor de operações, {item.client}
+                  — {item.testimonial.author}, {item.testimonial.role}
                 </footer>
               </blockquote>
             </div>

@@ -9,6 +9,7 @@ export type CaseItem = {
   stack: string[];
   metrics?: { label: string; value: string }[];
   story: { heading: string; body: string }[];
+  testimonial: { quote: string; author: string; role: string };
 };
 
 export const cases: CaseItem[] = [
@@ -36,6 +37,12 @@ export const cases: CaseItem[] = [
         body: "Agenda centralizada, sem dupla marcação, e o associado deixou de depender da sede para marcar uma lavagem.",
       },
     ],
+    testimonial: {
+      quote:
+        "Eu não sei te dizer quantas vezes a gente perdeu horário por causa de marcação duplicada — telefone tocando, caderno cheio de rasura, aquela bagunça. Hoje o associado entra no site, vê o que tá livre e marca. A sede só confirma quando ele chega pra lavar. Foi a mudança que mais sinto no dia a dia, sinceramente.",
+      author: "Pedro",
+      role: "Diretor administrativo, Auto Truck",
+    },
   },
   {
     slug: "tereza-personalizados",
@@ -61,6 +68,12 @@ export const cases: CaseItem[] = [
         body: "Novos clientes chegam já tendo visto o catálogo, encurtando o tempo de conversão entre primeiro contato e pedido fechado.",
       },
     ],
+    testimonial: {
+      quote:
+        "A gente atendia 100% pelo WhatsApp e cada orçamento começava do zero: explicar o que fazia, mandar foto, explicar de novo pro próximo. Hoje quem chega já viu o catálogo, já sabe se quer aquilo ou não. Ainda tem gente que prefere mandar mensagem, e tá ótimo, mas o orçamento fecha bem mais rápido quando a pessoa já chega decidida.",
+      author: "Diego",
+      role: "Sócio, Tereza Personalizados",
+    },
   },
   {
     slug: "cannon-parts",
@@ -86,6 +99,12 @@ export const cases: CaseItem[] = [
         body: "Vitrine digital pronta pra escalar, com identidade própria e padrão de UI reaproveitável em outros projetos.",
       },
     ],
+    testimonial: {
+      quote:
+        "Vendíamos peça só no balcão e no boca a boca, então a loja online foi um salto pra gente. O time construiu busca rápida e uma página de produto que mostra exatamente o que o cliente precisa saber antes de comprar. Hoje ele encontra a peça sozinho e fecha o pedido sem precisar ligar — e quando liga, já é pra comprar, não pra perguntar se tem.",
+      author: "Julio",
+      role: "Sócio-fundador, Cannon Parts",
+    },
   },
   {
     slug: "glt-motors",
@@ -111,6 +130,12 @@ export const cases: CaseItem[] = [
         body: "Vitrine digital pronta pra escalar o estoque, com identidade própria e padrão de UI reaproveitável em outros projetos.",
       },
     ],
+    testimonial: {
+      quote:
+        "A gente precisava de um jeito do comprador filtrar sozinho sem depender de vendedor pra cada busca. O time entregou isso com filtros bem pensados e uma página de anúncio completa, com tudo que a pessoa quer saber antes de vir até aqui. O comprador chega decidido, e isso mudou até a conversa que a gente tem com ele na loja.",
+      author: "Gabriel",
+      role: "Gerente comercial, GLT Motors",
+    },
   },
 ];
 

@@ -13,33 +13,33 @@ const pages: Testimonial[][] = [
   [
     {
       quote:
-        "O agendamento de lavagem virou simples pros nossos associados. A AG2 Tech entendeu a operação antes de escrever a primeira linha de código.",
+        "O que mudou de verdade foi o telefone parar de tocar o dia inteiro. Hoje o associado escolhe o horário sozinho, e a gente só confirma quando ele chega.",
       initials: "P",
       name: "Pedro",
-      role: "Auto Truck",
+      role: "Diretor administrativo, Auto Truck",
     },
     {
       quote:
-        "Do diagnóstico à operação, o processo foi claro e transparente. A equipe entregou exatamente o que a GLT precisava.",
+        "O comprador filtra sozinho e já chega decidido no anúncio. A gente deixou de perder tempo respondendo pergunta que o próprio site já responde.",
       initials: "G",
       name: "Gabriel",
-      role: "GLT",
+      role: "Gerente comercial, GLT Motors",
     },
   ],
   [
     {
       quote:
-        "A loja online tirou a Cannon Parts do off-line com uma vitrine própria e um fluxo de compra enxuto. Resultado rápido e sólido.",
+        "Cannon Parts sempre vendeu no boca a boca, isso não mudou. O que mudou foi o cliente achar a peça certa sem precisar ligar pra loja pra perguntar se tem.",
       initials: "J",
       name: "Julio",
-      role: "Cannon Parts",
+      role: "Sócio-fundador, Cannon Parts",
     },
     {
       quote:
-        "O site deu à Tereza Personalizados um catálogo profissional e encurtou o caminho entre o primeiro contato e o pedido fechado.",
+        "Nosso WhatsApp vivia cheio de gente perguntando preço e modelo, a mesma pergunta o dia inteiro. Com o catálogo no site isso caiu bastante.",
       initials: "D",
       name: "Diego",
-      role: "Tereza Personalizados",
+      role: "Sócio, Tereza Personalizados",
     },
   ],
 ];
