@@ -66,12 +66,10 @@ export default function SobrePage() {
       </section>
 
       <section className="border-b border-line bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-6 py-14 sm:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-6 py-14">
           {[
             { label: "Fundada em", value: "2021" },
-            { label: "Pessoas", value: "22" },
             { label: "Squads ativos", value: "12" },
-            { label: "Projetos no ar", value: "60+" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col">
               <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft">
