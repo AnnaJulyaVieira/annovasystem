@@ -16,14 +16,14 @@ const pages: Testimonial[][] = [
         "O que mudou de verdade foi o telefone parar de tocar o dia inteiro. Hoje o associado escolhe o horário sozinho, e a gente só confirma quando ele chega.",
       initials: "P",
       name: "Pedro",
-      role: "Diretor administrativo, Auto Truck",
+      role: "Auto Truck",
     },
     {
       quote:
         "O comprador filtra sozinho e já chega decidido no anúncio. A gente deixou de perder tempo respondendo pergunta que o próprio site já responde.",
       initials: "G",
       name: "Gabriel",
-      role: "Gerente comercial, GLT Motors",
+      role: "GLT Motors",
     },
   ],
   [
@@ -32,14 +32,14 @@ const pages: Testimonial[][] = [
         "Cannon Parts sempre vendeu no boca a boca, isso não mudou. O que mudou foi o cliente achar a peça certa sem precisar ligar pra loja pra perguntar se tem.",
       initials: "J",
       name: "Julio",
-      role: "Sócio-fundador, Cannon Parts",
+      role: "Cannon Parts",
     },
     {
       quote:
         "Nosso WhatsApp vivia cheio de gente perguntando preço e modelo, a mesma pergunta o dia inteiro. Com o catálogo no site isso caiu bastante.",
       initials: "D",
       name: "Diego",
-      role: "Sócio, Tereza Personalizados",
+      role: "Tereza Personalizados",
     },
   ],
 ];
