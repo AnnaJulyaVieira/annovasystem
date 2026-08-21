@@ -41,7 +41,7 @@ export const cases: CaseItem[] = [
       quote:
         "Eu não sei te dizer quantas vezes a gente perdeu horário por causa de marcação duplicada — telefone tocando, caderno cheio de rasura, aquela bagunça. Hoje o associado entra no site, vê o que tá livre e marca. A sede só confirma quando ele chega pra lavar. Foi a mudança que mais sinto no dia a dia, sinceramente.",
       author: "Pedro",
-      role: "Diretor administrativo, Auto Truck",
+      role: "Auto Truck",
     },
   },
   {
@@ -72,7 +72,7 @@ export const cases: CaseItem[] = [
       quote:
         "A gente atendia 100% pelo WhatsApp e cada orçamento começava do zero: explicar o que fazia, mandar foto, explicar de novo pro próximo. Hoje quem chega já viu o catálogo, já sabe se quer aquilo ou não. Ainda tem gente que prefere mandar mensagem, e tá ótimo, mas o orçamento fecha bem mais rápido quando a pessoa já chega decidida.",
       author: "Diego",
-      role: "Sócio, Tereza Personalizados",
+      role: "Tereza Personalizados",
     },
   },
   {
@@ -103,7 +103,7 @@ export const cases: CaseItem[] = [
       quote:
         "Vendíamos peça só no balcão e no boca a boca, então a loja online foi um salto pra gente. O time construiu busca rápida e uma página de produto que mostra exatamente o que o cliente precisa saber antes de comprar. Hoje ele encontra a peça sozinho e fecha o pedido sem precisar ligar — e quando liga, já é pra comprar, não pra perguntar se tem.",
       author: "Juliana",
-      role: "Sócia-fundadora, Cannon Parts",
+      role: "Cannon Parts",
     },
   },
   {
@@ -134,7 +134,7 @@ export const cases: CaseItem[] = [
       quote:
         "A gente precisava de um jeito do comprador filtrar sozinho sem depender de vendedor pra cada busca. O time entregou isso com filtros bem pensados e uma página de anúncio completa, com tudo que a pessoa quer saber antes de vir até aqui. O comprador chega decidido, e isso mudou até a conversa que a gente tem com ele na loja.",
       author: "Gabriel",
-      role: "Gerente comercial, GLT Motors",
+      role: "GLT Motors",
     },
   },
 ];
