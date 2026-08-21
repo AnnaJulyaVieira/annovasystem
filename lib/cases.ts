@@ -102,8 +102,8 @@ export const cases: CaseItem[] = [
     testimonial: {
       quote:
         "Vendíamos peça só no balcão e no boca a boca, então a loja online foi um salto pra gente. O time construiu busca rápida e uma página de produto que mostra exatamente o que o cliente precisa saber antes de comprar. Hoje ele encontra a peça sozinho e fecha o pedido sem precisar ligar — e quando liga, já é pra comprar, não pra perguntar se tem.",
-      author: "Julio",
-      role: "Sócio-fundador, Cannon Parts",
+      author: "Juliana",
+      role: "Sócia-fundadora, Cannon Parts",
     },
   },
   {

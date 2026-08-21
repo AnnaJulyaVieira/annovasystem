@@ -34,7 +34,7 @@ const principles = [
 const timeline = [
   { name: "Pedro", client: "Auto Truck" },
   { name: "Gabriel", client: "GLT" },
-  { name: "Julio", client: "Cannon Parts" },
+  { name: "Juliana", client: "Cannon Parts" },
   { name: "Diego", client: "Tereza Personalizados" },
 ];
 
@@ -153,13 +153,8 @@ export default function SobrePage() {
               Quer falar sobre o estúdio?
             </h3>
             <p className="mt-2 text-[14.5px] text-ink-soft">
-              Imprensa, parcerias institucionais e palestras:{" "}
-              <a
-                href="mailto:imprensa@ag2tech.com.br"
-                className="text-ink underline underline-offset-4"
-              >
-                imprensa@ag2tech.com.br
-              </a>
+              Imprensa, parcerias institucionais e palestras: fala com a
+              gente pelo formulário de contato.
             </p>
           </div>
           <Link

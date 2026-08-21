@@ -31,8 +31,8 @@ const pages: Testimonial[][] = [
       quote:
         "Cannon Parts sempre vendeu no boca a boca, isso não mudou. O que mudou foi o cliente achar a peça certa sem precisar ligar pra loja pra perguntar se tem.",
       initials: "J",
-      name: "Julio",
-      role: "Sócio-fundador, Cannon Parts",
+      name: "Juliana",
+      role: "Sócia-fundadora, Cannon Parts",
     },
     {
       quote:

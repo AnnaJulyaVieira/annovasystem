@@ -22,10 +22,7 @@ const footerCols = [
   },
   {
     title: "Contato",
-    links: [
-      { label: "hello@ag2tech.com.br", href: "mailto:hello@ag2tech.com.br" },
-      { label: "Belo Horizonte · Brasil", href: "#" },
-    ],
+    links: [{ label: "Belo Horizonte · Brasil", href: "#" }],
   },
 ];
 

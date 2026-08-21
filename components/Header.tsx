@@ -328,16 +328,6 @@ export default function Header() {
               Iniciar projeto
               <span aria-hidden="true">→</span>
             </Link>
-            <a
-              href="mailto:hello@ag2tech.com.br"
-              onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-between rounded-full border border-line-dark px-5 py-3.5 text-[14px] font-medium text-on-dark"
-            >
-              hello@ag2tech.com.br
-              <span className="text-on-dark-soft" aria-hidden="true">
-                →
-              </span>
-            </a>
           </div>
 
           <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.18em] text-on-dark-soft">
